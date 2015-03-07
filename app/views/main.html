@@ -1,23 +1,24 @@
 <div class="main">
   <h1>Celebr</h1>
 
-  <div ng-controller="MainCtrl">
     <form class="form-inline" role="form">
       <div class="form-group col-sm-12">
 
         <div class="input-group">
             <label class="sr-only" for="">Search for Celebrity...</label>
-            <input ng-model="search" type="search" class="form-control" id="enterCeleb" placeholder="Search for Celebrity...">
-        <ul>
-          <li ng-repeat="celeb in celebs | filter:search">
-              {{ celeb }}
-          </li>
-        </ul>
-        </div>
+            <input ng-model="search" ng-click="showResults = ! showResults" type="search" class="form-control" id="enterCeleb" placeholder="Search for Celebrity...">
 
+          <div class="searchResults col-lg-12">
+            <!-- result iterator -->
+            <a ng-show="showResults" ng-repeat="celeb in celebs | filter:search" href=" /{{ celeb.uri }} ">
+              <div class="searchResult col-sm-12">
+                <p>{{ celeb.name }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
 
       </div>
     </form>
-  </div>
 
 </div>
