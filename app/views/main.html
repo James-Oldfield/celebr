@@ -10,7 +10,7 @@
 
           <div class="searchResults col-lg-12">
             <!-- result iterator -->
-            <a ng-show="showResults" ng-repeat="celeb in celebs | filter:search" href=" /{{ celeb.uri }} ">
+            <a ng-show="showResults" ng-repeat="celeb in celebs | filter:search" href=" /#/celebrity/{{ celeb.uri }} ">
               <div class="searchResult col-sm-12">
                 <p>{{ celeb.name }}</p>
               </div>
