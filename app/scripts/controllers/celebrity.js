@@ -15,5 +15,4 @@ angular.module('ryanApp')
 
 		$scope.c      = $filter('filter') ($scope.celebs, function (d) {return d.uri === $scope.param;});
 
-
   }]);

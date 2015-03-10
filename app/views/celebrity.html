@@ -1,3 +1,27 @@
-<h1>CELEBS</h1>
+<div class="container celebrityProfile text-center">
 
-<pre ng-bind="c | json"></pre>
+	<div class="top">
+		<h1>
+			{{c[0].name}}
+		</h1>
+		<h2>
+			{{c[0].subTitle}}
+		</h2>
+	</div>
+
+<div class="profilePicture col-lg-12">
+	<img src="{{ c[0].image }}" alt="{{ c[0].description }}" width="300px" height="auto" class="img-repsonsive">
+<div class="description">
+	<p>
+		{{c[0].description}}
+	</p>
+</div>
+</div>
+
+
+	<a class="twitter-timeline" href="https://twitter.com/{{ c[0].twitter }}" data-screen-name="{{ c[0].twitter }}" data-widget-id="575220856563068929">Tweets by @JOldfield_</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+<!-- <pre ng-bind="c | json"></pre> -->

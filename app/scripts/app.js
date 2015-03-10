@@ -65,7 +65,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/celebrity/:celebrity', {
+      .when('/celebrity/:celebrity', {  
           templateUrl: 'views/celebrity.html',
           controller: 'CelebrityCtrl',
           resolve: {

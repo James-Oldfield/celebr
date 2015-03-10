@@ -1,7 +1,34 @@
 [
-	{ "name" : "kim kardashian", "uri": "kim-kardashian"},
-	{ "name" : "james", "uri": "james-oldfield"},
-	{ "name" : "david beckham" , "uri": "david-beckham"},
-	{ "name" : "katie price"   , "uri": "katie-price"},
-	{ "name" : "taylor swift"  , "uri": "taylor-swift"}
+	{ 
+		"name" : "kim kardashian", 
+		"uri" : "kim-kardashian",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"subTitle" : "lorem ipsum",
+		"image" : "http://i.dailymail.co.uk/i/pix/2014/03/29/article-2592121-1BFC751D00000578-733_634x600.jpg",
+		"twitter" : "KimKardashian"
+	},
+	{ 
+		"name" : "Vanessa Hudgens", 
+		"uri" : "vanessa-hudgens",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"subTitle" : "lorem ipsum",
+		"image" : "https://pbs.twimg.com/profile_images/547151052378611713/EiunGVOe.jpeg",
+		"twitter" : "VanessaHudgens"
+	},
+	{ 
+		"name" : "katie price", 
+		"uri" : "katie-price",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"subTitle" : "lorem ipsum",
+		"image" : "https://pbs.twimg.com/profile_images/571426242051870721/UhdMRdFh.jpeg",
+		"twitter" : "MissKatiePrice"
+	},
+	{ 
+		"name" : "taylor swift", 
+		"uri" : "taylor-swift",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"subTitle" : "lorem ipsum",
+		"image" : "https://pbs.twimg.com/profile_images/505200807503867904/osJXmYRl.jpeg",
+		"twitter" : "taylorswift13"
+	}
 ]
