@@ -9,18 +9,33 @@
 		</h2>
 	</div>
 
-<div class="profilePicture col-lg-12">
-	<img src="{{ c[0].image }}" alt="{{ c[0].description }}" width="300px" height="auto" class="img-repsonsive">
-<div class="description">
-	<p>
-		{{c[0].description}}
-	</p>
-</div>
-</div>
+	<div class="profilePicture col-lg-12">
+		<div class="col-xs-6">
+			<img src="{{ c[0].image }}" alt="{{ c[0].description }}" width="100%" height="auto" class="img-repsonsive">
+		</div>
+		<div class="col-xs-6">
+			<h1>
+				{{c[0].name}}
+			</h1>
+			<h2>
+				{{c[0].subTitle}}
+			</h2>
+		</div>
+	</div>
 
+	<div class="col-xs-12 product" ng-repeat="product in c[0].products">
+		<h1>
+			{{ product.title }}
+		</h1>
+		<a href="{{ product.uri }}">
+			<img src="{{ product.image }}" alt="{{ product.uri }}">
+		</a>
+	</div>
 
-	<a class="twitter-timeline" href="https://twitter.com/{{ c[0].twitter }}" data-screen-name="{{ c[0].twitter }}" data-widget-id="575220856563068929">Tweets by @JOldfield_</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- <div data-product></div data-product> -->
+
+	<!-- <a class="twitter-timeline" href="https://twitter.com/{{ c[0].twitter }}" data-screen-name="{{ c[0].twitter }}" data-widget-id="575220856563068929">Tweets by @JOldfield_</a> -->
+	<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
 
 </div>
 
