@@ -11,25 +11,33 @@
 
 	<div class="profilePicture col-lg-12">
 		<div class="col-xs-6">
-			<img src="{{ c[0].image }}" alt="{{ c[0].description }}" width="100%" height="auto" class="img-repsonsive">
+			<img src="{{ c[0].image }}" alt="{{ c[0].description }}" class="img-repsonsive profilePicture">
 		</div>
 		<div class="col-xs-6">
 			<h1>
-				{{c[0].name}}
+				{{ c[0].name }}
 			</h1>
 			<h2>
-				{{c[0].subTitle}}
+				{{ c[0].subTitle }}
+			</h2>
+			<h2>
+				{{ c[0].followers }} followers
 			</h2>
 		</div>
 	</div>
 
-	<div class="col-xs-12 product" ng-repeat="product in c[0].products">
-		<h1>
-			{{ product.title }}
-		</h1>
-		<a href="{{ product.uri }}">
-			<img src="{{ product.image }}" alt="{{ product.uri }}">
-		</a>
+	<div class="col-xs-12 productWrapper">
+		<div class="col-xs-6 col-sm-4 product" ng-repeat="product in c[0].products">
+			<h1 class="productTitle">
+				{{ product.title }}
+			</h1>
+			<div class="imageWrapper">
+				<a href="{{ product.uri }}">
+					<img src="{{ product.image }}" alt="{{ product.uri }}" class="img-responsive">
+					<img src="../images/heartAdd.png" alt="{{ product.uri }}" width="30px" height="auto">
+				</a>
+			</div>
+		</div>
 	</div>
 
 	<!-- <div data-product></div data-product> -->

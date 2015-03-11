@@ -61,8 +61,44 @@ body {
   width: 100%;
   padding: 0;
 
+  .heart {
+    float: right;
+    margin: 10px 0;
+  }
+
+  .logo {
+    margin-left: -30px;
+
+    @include breakpoint(md) {
+      margin: 0px;
+    }
+
+    img {
+      margin: 10px 0;
+
+      @include breakpoint(md) {
+        margin: 0px;
+      }
+    }
+  }
+
+  .nav {
+    display: inline-block;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
   .navbar-header {
     margin: 0px;
+    display: inline-block;
+    float: left;
+
+    @include breakpoint(md) {
+      display: block;
+      float: none;
+    }
   }
 }
 
@@ -81,6 +117,10 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
+
+  .nav {
+    text-align: center;
   }
 }
 
@@ -103,6 +143,9 @@ body {
     float: none;
     vertical-align: top;
   }
+  .navbar-toggle {
+    float: left!important;
+  }
 
   .navbar-collapse {
     text-align: center;
@@ -117,23 +160,32 @@ body {
   height: 100%;
   position: fixed;
   text-align: center;
-  padding: 200px 10%;
+  padding: 150px 10%;
   color: $myWhite;
   background: url('https://36.media.tumblr.com/7c497bac3d91448eacd9c957bbd9011f/tumblr_mtpbc2rIVq1qhtc4xo1_500.jpg') no-repeat;
   background-size: cover;
 
   h1 {
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 800;
     text-transform: uppercase;
     background: $myRed;
     display: inline-block;
     padding: 20px;
+
+    @include breakpoint(md) {
+      font-size: 75px;
+    }
   } 
   h2{
     margin-bottom: 25px!important;
+    font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
+
+    @include breakpoint(md) {
+      font-size: 25px;
+    }
   }
 
   .input-group {
@@ -143,8 +195,13 @@ body {
     .form-control {
       margin-bottom: 10px;
       height: 75px;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center;
+
+    @include breakpoint(md) {
+      font-size: 18px;
+    }
+
     }
   }
 
@@ -178,28 +235,53 @@ body {
     color: $myWhite;
     padding: 50px;
     text-transform: uppercase;
+  }
 
-    h1 {
-      font-weight: 600;
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+
+    @include breakpoint(md) {
+      font-size: inherit;
     }
-    h2 {
-      font-weight: 100;
+  }
+  h2 {
+    font-weight: 100;
+    font-size: 16px;
+
+    @include breakpoint(md) {
+      font-size: inherit;
     }
   }
 
   .profilePicture {
-    margin: 50px 0;
+    margin: 20px 0 50px 0;
 
-  .description {
-    padding: 25px;
+    img.profilePicture {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+    }
 
-    @include breakpoint(md) {
-      padding: 50px 300px;
+    .description {
+      padding: 25px;
+
+      @include breakpoint(md) {
+        padding: 50px 300px;
+      }
     }
   }
+
+  .productWrapper {
+
+    h1.productTitle {
+      font-size: 16px;
+    }
+
+    img {
+      margin: 0 auto;
+    }
   }
-
-
 }
 
 /* Custom page footer */

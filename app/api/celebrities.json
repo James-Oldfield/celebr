@@ -2,6 +2,7 @@
 	{ 
 		"name" : "kim kardashian", 
 		"uri" : "kim-kardashian",
+		"followers" : 100000,
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"subTitle" : "lorem ipsum",
 		"image" : "http://i.dailymail.co.uk/i/pix/2014/03/29/article-2592121-1BFC751D00000578-733_634x600.jpg",
@@ -10,13 +11,12 @@
 			{ "title": "Blue Jeans", "uri" : "http://www.asos.com/nudie-jeans/nudie-jeans-steady-eddie-straight-fit-blond-slubs/prod/pgeproduct.aspx?iid=4792562&clr=Blondslubs&SearchQuery=jeans&pgesize=36&pge=1&totalstyles=4194&gridsize=3&gridrow=1&gridcolumn=3", "image" : "http://images.asos-media.com/inv/media/2/6/5/2/4792562/blondslubs/image1xl.jpg" },
 			{ "title": "Black shoes", "uri" : "http://www.asos.com/new-look/new-look-josie-t-bar-flat-shoes/prod/pgeproduct.aspx?iid=4826871&clr=Black&SearchQuery=shoes&pgesize=36&pge=1&totalstyles=7004&gridsize=3&gridrow=2&gridcolumn=1", "image" : "http://images.asos-media.com/inv/media/1/7/8/6/4826871/black/image1xl.jpg" },
 			{ "title": "Pink Veil", "uri" : "http://www.asos.com/Rock-N-Rose/Rock-N-Rose-Kendall-Veil-Bow-Headband/Prod/pgeproduct.aspx?iid=5157241&cid=4174&sh=0&pge=0&pgesize=36&sort=-1&clr=Lavender&totalstyles=774&gridsize=3", "image" : "http://images.asos-media.com/inv/media/1/4/2/7/5157241/lavender/image1xl.jpg" }
-
-
 		]
 	},
 	{ 
 		"name" : "Vanessa Hudgens", 
 		"uri" : "vanessa-hudgens",
+		"followers" : 100000,
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"subTitle" : "lorem ipsum",
 		"image" : "https://pbs.twimg.com/profile_images/547151052378611713/EiunGVOe.jpeg",
@@ -25,13 +25,12 @@
 			{ "title": "Blue Jeans", "uri" : "http://www.asos.com/nudie-jeans/nudie-jeans-steady-eddie-straight-fit-blond-slubs/prod/pgeproduct.aspx?iid=4792562&clr=Blondslubs&SearchQuery=jeans&pgesize=36&pge=1&totalstyles=4194&gridsize=3&gridrow=1&gridcolumn=3", "image" : "http://images.asos-media.com/inv/media/2/6/5/2/4792562/blondslubs/image1xl.jpg" },
 			{ "title": "Black shoes", "uri" : "http://www.asos.com/new-look/new-look-josie-t-bar-flat-shoes/prod/pgeproduct.aspx?iid=4826871&clr=Black&SearchQuery=shoes&pgesize=36&pge=1&totalstyles=7004&gridsize=3&gridrow=2&gridcolumn=1", "image" : "http://images.asos-media.com/inv/media/1/7/8/6/4826871/black/image1xl.jpg" },
 			{ "title": "Pink Veil", "uri" : "http://www.asos.com/Rock-N-Rose/Rock-N-Rose-Kendall-Veil-Bow-Headband/Prod/pgeproduct.aspx?iid=5157241&cid=4174&sh=0&pge=0&pgesize=36&sort=-1&clr=Lavender&totalstyles=774&gridsize=3", "image" : "http://images.asos-media.com/inv/media/1/4/2/7/5157241/lavender/image1xl.jpg" }
-
-
 		]
 	},
 	{ 
 		"name" : "katie price", 
 		"uri" : "katie-price",
+		"followers" : 100000,
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"subTitle" : "lorem ipsum",
 		"image" : "https://pbs.twimg.com/profile_images/571426242051870721/UhdMRdFh.jpeg",
@@ -40,13 +39,12 @@
 			{ "title": "Blue Jeans", "uri" : "http://www.asos.com/nudie-jeans/nudie-jeans-steady-eddie-straight-fit-blond-slubs/prod/pgeproduct.aspx?iid=4792562&clr=Blondslubs&SearchQuery=jeans&pgesize=36&pge=1&totalstyles=4194&gridsize=3&gridrow=1&gridcolumn=3", "image" : "http://images.asos-media.com/inv/media/2/6/5/2/4792562/blondslubs/image1xl.jpg" },
 			{ "title": "Black shoes", "uri" : "http://www.asos.com/new-look/new-look-josie-t-bar-flat-shoes/prod/pgeproduct.aspx?iid=4826871&clr=Black&SearchQuery=shoes&pgesize=36&pge=1&totalstyles=7004&gridsize=3&gridrow=2&gridcolumn=1", "image" : "http://images.asos-media.com/inv/media/1/7/8/6/4826871/black/image1xl.jpg" },
 			{ "title": "Pink Veil", "uri" : "http://www.asos.com/Rock-N-Rose/Rock-N-Rose-Kendall-Veil-Bow-Headband/Prod/pgeproduct.aspx?iid=5157241&cid=4174&sh=0&pge=0&pgesize=36&sort=-1&clr=Lavender&totalstyles=774&gridsize=3", "image" : "http://images.asos-media.com/inv/media/1/4/2/7/5157241/lavender/image1xl.jpg" }
-
-
 		]
 	},
 	{ 
 		"name" : "taylor swift", 
 		"uri" : "taylor-swift",
+		"followers" : 100000,
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"subTitle" : "lorem ipsum",
 		"image" : "https://pbs.twimg.com/profile_images/505200807503867904/osJXmYRl.jpeg",
@@ -55,8 +53,6 @@
 			{ "title": "Blue Jeans", "uri" : "http://www.asos.com/nudie-jeans/nudie-jeans-steady-eddie-straight-fit-blond-slubs/prod/pgeproduct.aspx?iid=4792562&clr=Blondslubs&SearchQuery=jeans&pgesize=36&pge=1&totalstyles=4194&gridsize=3&gridrow=1&gridcolumn=3", "image" : "http://images.asos-media.com/inv/media/2/6/5/2/4792562/blondslubs/image1xl.jpg" },
 			{ "title": "Black shoes", "uri" : "http://www.asos.com/new-look/new-look-josie-t-bar-flat-shoes/prod/pgeproduct.aspx?iid=4826871&clr=Black&SearchQuery=shoes&pgesize=36&pge=1&totalstyles=7004&gridsize=3&gridrow=2&gridcolumn=1", "image" : "http://images.asos-media.com/inv/media/1/7/8/6/4826871/black/image1xl.jpg" },
 			{ "title": "Pink Veil", "uri" : "http://www.asos.com/Rock-N-Rose/Rock-N-Rose-Kendall-Veil-Bow-Headband/Prod/pgeproduct.aspx?iid=5157241&cid=4174&sh=0&pge=0&pgesize=36&sort=-1&clr=Lavender&totalstyles=774&gridsize=3", "image" : "http://images.asos-media.com/inv/media/1/4/2/7/5157241/lavender/image1xl.jpg" }
-
-
 		]
 	}
 ]
