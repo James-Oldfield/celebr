@@ -5,7 +5,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // CUSTOM FONTS
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
 $fontStack: 'Open Sans', sans-serif;
+$brandingFont: 'Comfortaa', cursive;
 
 /**
  * Media Queries
@@ -19,7 +21,7 @@ $fontStack: 'Open Sans', sans-serif;
  */
   $myWhite: #fefefe;
   $myBlack: #1a1a1a;
-  $myRed:   #e35937;
+  $myRed:   #E32E27;
 
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -55,6 +57,7 @@ body {
   font-family: $fontStack!important;
   padding: 0;
   letter-spacing: 0.2em;
+  margin-top: 71px;
 }
 
 .container {
@@ -66,15 +69,21 @@ body {
     margin: 10px 0;
   }
 
-  .logo {
+  a.logo {
+    font-size: 35px;
+    color: $myBlack!important;
     margin-left: -30px;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     @include breakpoint(md) {
       margin: 0px;
     }
 
     img {
-      margin: 10px 0;
+      margin: 0px;
 
       @include breakpoint(md) {
         margin: 0px;
@@ -125,7 +134,7 @@ body {
 }
 
 .navbar {
-  z-index: 3;
+  z-index: 15;
   margin-bottom: 0px;
   padding: 10px 35px;
 
@@ -160,28 +169,32 @@ body {
   height: 100%;
   position: fixed;
   text-align: center;
-  padding: 150px 10%;
+  padding: 75px 10%;
   color: $myWhite;
-  background: url('https://36.media.tumblr.com/7c497bac3d91448eacd9c957bbd9011f/tumblr_mtpbc2rIVq1qhtc4xo1_500.jpg') no-repeat;
+  // background: url('https://36.media.tumblr.com/7c497bac3d91448eacd9c957bbd9011f/tumblr_mtpbc2rIVq1qhtc4xo1_500.jpg') no-repeat;
   background-size: cover;
 
   h1 {
+    font-family: $brandingFont;
     font-size: 55px;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: $myRed;
+    font-weight: 300;
+    color: $myRed;
     display: inline-block;
     padding: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
 
     @include breakpoint(md) {
       font-size: 75px;
     }
   } 
-  h2{
+  h2 {
+    color: $myBlack;
     margin-bottom: 25px!important;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 100;
-    text-transform: uppercase;
+    margin-top: 0px;
+    color: lighten($myBlack, 30%);
 
     @include breakpoint(md) {
       font-size: 25px;
@@ -189,14 +202,34 @@ body {
   }
 
   .input-group {
-    width: 80%;
-    margin: 0px auto;
+    color: lighten($myBlack, 30%);
+    width: 100%;
+    // margin: 0px auto;
+
+    .searchIcon {
+      position: absolute;
+      top: 25px;
+      z-index: 10;
+      right: 30px;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */ color: $myBlack;}
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: $myBlack; opacity:  1;}
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */ color: $myBlack; opacity:  1;}
+    :-ms-input-placeholder { /* Internet Explorer 10+ */ color: $myBlack;}
+
+    input {
+      border: solid 1px lighten($myBlack, 30%);
+      border-radius: 100px!important;
+      letter-spacing: 0.06em;
+    }
 
     .form-control {
       margin-bottom: 10px;
       height: 75px;
       font-size: 14px;
-      text-align: center;
+      padding-left: 35px;
+      text-align: left;
 
     @include breakpoint(md) {
       font-size: 18px;
@@ -207,7 +240,7 @@ body {
 
   .searchResults {
       a {
-        color: $myBlack!important;
+        color: $myRed!important;
 
         &:hover {
           color: $myRed!important;
@@ -215,11 +248,14 @@ body {
       }
 
     .searchResult {
-      background: rgba(255, 255, 255, 0.8);
+      color: $myBlack;
+      border: solid 1px $myBlack;
+      // background: rgba(255, 255, 255, 0.8);
       padding: 30px;
       margin: 10px 0px;
 
       &:hover {
+        color: $myRed;
         background: rgba(255, 255, 255, 0.9);
       }
     }
@@ -228,7 +264,22 @@ body {
 
 // celeb profile
 
+.searchCeleb {
+  top: 15px;
+  z-index: 10;
+
+  .input-group .searchIcon {
+    top: 10px!important;
+  }
+
+  .input-group .form-control {
+    height: 45px!important;
+  }
+}
+
 .celebrityProfile {
+
+  margin-top: 50px;
 
   .top {
     background: $myRed;
@@ -255,7 +306,46 @@ body {
   }
 
   .profilePicture {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 0px 0;
+    padding: 0px;
+
+    h1 {
+      margin-top: 0px;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: left;
+      text-transform: capitalize;
+    }
+
+    h2.followButton {
+      margin-top: 15px;
+      border-radius: 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: red;
+      border: solid 1px red;
+      display: inline-block;
+      padding: 10px 45px;
+    }
+    .profileStats {
+      margin-top: 10px;
+      letter-spacing: 0;
+      font-size: 16px;
+      display: inline-block;
+      border: solid 1px;
+      padding: 5px 15px;
+
+      .followersTitle {
+        margin: 5px 0px!important;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      p {
+        font-size: 8px;
+      }
+    }
 
     img.profilePicture {
       max-width: 400px;
@@ -272,15 +362,43 @@ body {
     }
   }
 
+  .profileDetails {
+    padding-top: 20px;
+    text-align: left;
+  }
+
   .productWrapper {
 
     h1.productTitle {
       font-size: 16px;
     }
 
-    img {
+    img.saveItem {
       margin: 0 auto;
+      position: absolute;
+      top: 85%;
+      right: 10%;
     }
+  }
+}
+
+// SAVED
+
+.savedItemsPage {
+
+  margin-bottom: 50px;
+  text-align: center;
+
+  h1.productTitle {
+    font-size: 16px;
+  }
+
+  .product {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
   }
 }
 

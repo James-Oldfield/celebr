@@ -1,28 +1,61 @@
-<div class="container celebrityProfile text-center">
+<div class="main searchCeleb"
+  <form class="form-inline" role="form">
+    <div class="form-group col-sm-12">
 
-	<div class="top">
+      <div class="input-group">
+        <img class="searchIcon" src="../images/search.png" width="25px" height="auto" alt="">
+          <label class="sr-only" for="">Search for Celebrity...</label>
+          <input ng-model="search" ng-click="showResults = ! showResults; hideBG =! hideBG" type="search" class="form-control" id="enterCeleb" placeholder="Search...">
+
+        <div class="searchResults col-lg-12">
+          <!-- result iterator -->
+          <a ng-show="showResults" ng-repeat="celeb in celebs | filter:search" href=" /#/celebrity/{{ celeb.uri }} ">
+            <div class="searchResult col-xs-12">
+              <p>{{ celeb.name }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<div class="container celebrityProfile text-center" ng-show="!hideBG">
+
+<!-- 	<div class="top">
 		<h1>
 			{{c[0].name}}
 		</h1>
 		<h2>
 			{{c[0].subTitle}}
 		</h2>
-	</div>
+	</div> -->
 
 	<div class="profilePicture col-lg-12">
 		<div class="col-xs-6">
 			<img src="{{ c[0].image }}" alt="{{ c[0].description }}" class="img-repsonsive profilePicture">
 		</div>
-		<div class="col-xs-6">
-			<h1>
-				{{ c[0].name }}
-			</h1>
-			<h2>
+		<div class="profileDetails col-xs-6">
+<!-- 			<h2>
 				{{ c[0].subTitle }}
 			</h2>
 			<h2>
 				{{ c[0].followers }} followers
-			</h2>
+			</h2> -->
+			<h1>
+				{{ c[0].name }}
+			</h1>
+			<div class="profileStats">
+				<h3 class="followersTitle">21231</h3>
+				<p>Followers</p>
+			</div>
+			<div class="profileStats">
+				<h3 class="followersTitle">21231</h3>
+				<p>Following</p>
+			</div>
+
+			<a href="/"><h2 class="followButton">Follow</h2></a>
 		</div>
 	</div>
 
@@ -34,8 +67,8 @@
 			<div class="imageWrapper">
 				<a href="{{ product.uri }}">
 					<img src="{{ product.image }}" alt="{{ product.uri }}" class="img-responsive">
-					<img src="../images/heartAdd.png" alt="{{ product.uri }}" width="30px" height="auto">
 				</a>
+					<img class="saveItem" ng-click="saveItem()" src="../images/heartAdd.png" alt="{{ product.uri }}" width="30px" height="auto">
 			</div>
 		</div>
 	</div>

@@ -73,6 +73,11 @@ angular
             return $http.get('/api/celebrities.json').then(function (response) {
               return response.data;
             });
+          }], 
+          saved: ['$http', function ($http) {
+            return $http.get('/api/saved.json').then(function (response) {
+              return response.data;
+            });
           }]
         }
       })

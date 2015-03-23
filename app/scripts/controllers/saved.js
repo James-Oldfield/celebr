@@ -9,5 +9,5 @@
  */
 angular.module('ryanApp')
   .controller('SavedCtrl', ['$scope', 'saved', function ($scope, saved) {
-  	$scope.saved = saved;
+  	$scope.products = saved;
   }]);
