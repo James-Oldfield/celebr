@@ -1,3 +1,22 @@
-<h1>ACCOUNT</h1>
+<div class="account">
+	<div class="title">
+		<h1>Account</h1>
+	</div>
 
-<pre ng-bind="account | json"></pre>
+	<div class="details col-lg-12" ng-repeat="a in account">
+		<div class="pictureWrapper">
+			<h2>EDIT</h2>
+			<img ng-click="editPhoto =! editPhoto" class="profilePicture" src="{{ a.picture }}" alt="{{ a.name }}">
+		</div>
+		<h1>{{ a.name }}</h1>
+		<p>{{ a.description }}</p>
+	</div>
+
+	<div ng-show="editPhoto" class="editPhoto">
+		<a href="#"><h2>Upload Photo</h2></a>
+		<a href="#"><h2>Import from Facebook</h2></a>
+		<a href="#"><h2>Lorem Ipsum</h2></a>
+		<a href="#"><h2>Lorem Ipsum</h2></a>
+	</div>
+	
+</div>

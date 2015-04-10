@@ -32,7 +32,7 @@ angular
         }
       })
       // route for saved items
-      .when('/saved', {
+      .when('/wish-list', {
         templateUrl: 'views/saved.html',
         controller: 'SavedCtrl',
         resolve: {

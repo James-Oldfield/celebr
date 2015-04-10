@@ -22,6 +22,7 @@ $brandingFont: 'Comfortaa', cursive;
   $myWhite: #fefefe;
   $myBlack: #1a1a1a;
   $myRed:   #E32E27;
+  $myGray:  #e5e5e5;
 
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -68,11 +69,17 @@ body {
     float: right;
     margin: 10px 0;
   }
+  .coin {
+    float: right;
+    margin: 10px 0;
+  }
 
-  a.logo {
-    font-size: 35px;
-    color: $myBlack!important;
-    margin-left: -30px;
+  a.logo h1{
+    display: inline-block;
+    margin-top: 5px;
+    font-family: $brandingFont;
+    color: $myRed;
+    font-size: 30px;
 
     &:hover {
       text-decoration: none;
@@ -99,6 +106,16 @@ body {
     }
   }
 
+  .navbar-default {
+
+    border-bottom: 2px solid $myGray;
+
+    .navbar-toggle {
+      .icon-bar {
+        background: $myBlack!important;
+      }
+    }
+  }
   .navbar-header {
     margin: 0px;
     display: inline-block;
@@ -118,7 +135,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -130,13 +146,19 @@ body {
 
   .nav {
     text-align: center;
+    display: inline-block;
+  }
+
+  .navbarIcons {
+    display: inline-block;
+    float: right;
   }
 }
 
 .navbar {
   z-index: 15;
   margin-bottom: 0px;
-  padding: 10px 35px;
+  padding: 10px 20px;
 
   li {
     a{
@@ -157,6 +179,7 @@ body {
   }
 
   .navbar-collapse {
+    width: 100%;
     text-align: center;
     margin: 0px!important;
   }
@@ -309,6 +332,10 @@ body {
     margin: 20px 0 0px 0;
     padding: 0px;
 
+    img {
+      border: solid 2px $myRed;
+    }
+
     h1 {
       margin-top: 0px;
       font-weight: 600;
@@ -369,25 +396,102 @@ body {
 
   .productWrapper {
 
+    margin-top: 30px;
+
     h1.productTitle {
-      font-size: 16px;
+      text-transform: uppercase;
+      font-size: 10px;
     }
 
     img.saveItem {
       margin: 0 auto;
       position: absolute;
-      top: 85%;
-      right: 10%;
+      top: 68%;
+      right: 9%;
     }
   }
 }
 
-// SAVED
+// ACCOUNT 
 
+.account {
+  .details {
+    text-align: center;
+    margin-top: 100px;
+  }
+  img.profilePicture {
+    position: relative;
+    width: 80%;
+  }
+  .pictureWrapper {
+    position: relative;
+    h2 {
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      text-align: center;
+      margin: 0 auto;
+      left: 42%;
+      font-size: 20px;
+    }
+  }
+  .title {
+    top: 71px;
+  }
+  .editPhoto {
+		position: fixed;
+	  text-align: center;
+	  padding: 50px;
+	  background: black;
+	  color: white;
+	  z-index: 1;
+	  bottom: 0;
+  }
+}
+
+// SAVED
+.savedTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+	
+.title {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  background: white;
+  border-bottom: solid 2px $myGray;
+
+
+  .cross {
+    position: fixed;
+    width: 20px;
+    right: 20px;
+    z-index: 1;
+    top: 90px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+}
+
+.wishList {
+  margin-top: 50px;
+}
 .savedItemsPage {
 
+  padding: 20px;
   margin-bottom: 50px;
   text-align: center;
+  border-top: solid 2px $myGray;
+  border-bottom: solid 2px $myGray;
+
+  .productTitleWrapper {
+    margin: 14% 0;
+  }
 
   h1.productTitle {
     font-size: 16px;
@@ -406,6 +510,6 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $myGray;
 }
 

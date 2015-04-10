@@ -5,7 +5,7 @@
       <div class="input-group">
         <img class="searchIcon" src="../images/search.png" width="25px" height="auto" alt="">
           <label class="sr-only" for="">Search for Celebrity...</label>
-          <input ng-model="search" ng-click="showResults = ! showResults; hideBG =! hideBG" type="search" class="form-control" id="enterCeleb" placeholder="Search...">
+          <input ng-model="search" ng-click="showResults =! showResults; hideBG =! hideBG" type="search" class="form-control" id="enterCeleb" placeholder="Search...">
 
         <div class="searchResults col-lg-12">
           <!-- result iterator -->
@@ -61,15 +61,15 @@
 
 	<div class="col-xs-12 productWrapper">
 		<div class="col-xs-6 col-sm-4 product" ng-repeat="product in c[0].products">
-			<h1 class="productTitle">
-				{{ product.title }}
-			</h1>
 			<div class="imageWrapper">
 				<a href="{{ product.uri }}">
 					<img src="{{ product.image }}" alt="{{ product.uri }}" class="img-responsive">
 				</a>
 					<img class="saveItem" ng-click="saveItem()" src="../images/heartAdd.png" alt="{{ product.uri }}" width="30px" height="auto">
 			</div>
+			<h1 class="productTitle">
+				{{ product.title }}
+			</h1>
 		</div>
 	</div>
 

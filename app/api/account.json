@@ -1,6 +1,7 @@
 [
 	{ 
 		"name": "James Oldfield",
-		"picture": "../images/profilePicture.jpg"
+		"picture": "https://scontent-lhr.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/10710788_10205225970358377_5496056659900522118_n.jpg?oh=664d5c12a84c4d0af0de342ec82234a3&oe=55B697AC",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus risus ullamcorper purus congue, eu commodo sem rhoncus."
 	}
 ]
